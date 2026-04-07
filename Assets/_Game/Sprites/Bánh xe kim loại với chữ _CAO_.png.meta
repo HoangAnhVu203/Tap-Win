@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 5c0f7335c3750407ea03b0300e205734
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3884981327020382220
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__0"
+  - first:
+      213: -6839658240904253204
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__1"
+  - first:
+      213: 7119239058527229370
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__2"
+  - first:
+      213: -1857989330822748675
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__3"
+  - first:
+      213: -8145467958683923667
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__4"
+  - first:
+      213: -8534846097253103045
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__5"
+  - first:
+      213: -4757194570906559794
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__6"
+  - first:
+      213: 2832217991615410906
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__7"
+  - first:
+      213: 7492874530784563960
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__8"
+  - first:
+      213: 7341986402197782075
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__9"
+  - first:
+      213: 6324202756155797847
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__10"
+  - first:
+      213: -3302954877458832663
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__11"
+  - first:
+      213: 5606525027386628640
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__12"
+  - first:
+      213: 8009278691700371709
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__13"
+  - first:
+      213: 1555331914131458646
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__14"
+  - first:
+      213: -3009733808792022587
+    second: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__0"
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 166
+        width: 1210
+        height: 718
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7aceb0116c51ac0800000000000000
+      internalID: -3884981327020382220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__1"
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 447
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce034d56117a411a0800000000000000
+      internalID: -6839658240904253204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__2"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 983
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab51a92543e9cc260800000000000000
+      internalID: 7119239058527229370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__3"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 974
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df528d33c881736e0800000000000000
+      internalID: -1857989330822748675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__4"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 768
+        width: 8
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b81515c0c75fe80800000000000000
+      internalID: -8145467958683923667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__5"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 719
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a8990b1b22e8980800000000000000
+      internalID: -8534846097253103045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__6"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 702
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca92b11ebc0bfdb0800000000000000
+      internalID: -4757194570906559794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__7"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 383
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2f4b4f14f0e4720800000000000000
+      internalID: 2832217991615410906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__8"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 336
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f25cf1dfa90cf760800000000000000
+      internalID: 7492874530784563960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__9"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 319
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e3fb8bbb9f3e560800000000000000
+      internalID: 7341986402197782075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__10"
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 654
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751763056e414c750800000000000000
+      internalID: 6324202756155797847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__11"
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 622
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e22cebe90c8922d0800000000000000
+      internalID: -3302954877458832663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__12"
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a97b9cec06ecd40800000000000000
+      internalID: 5606525027386628640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__13"
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 164
+        width: 1212
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0f7edf88ca62f60800000000000000
+      internalID: 8009278691700371709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__14"
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 24
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a42a9a226a59510800000000000000
+      internalID: 1555331914131458646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__15"
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 39
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1d7721c074b36d0800000000000000
+      internalID: -3009733808792022587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0ddd42085131e46f4929862b153d1ccd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__0": -3884981327020382220
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__1": -6839658240904253204
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__10": 6324202756155797847
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__11": -3302954877458832663
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__12": 5606525027386628640
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__13": 8009278691700371709
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__14": 1555331914131458646
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__15": -3009733808792022587
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__2": 7119239058527229370
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__3": -1857989330822748675
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__4": -8145467958683923667
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__5": -8534846097253103045
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__6": -4757194570906559794
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__7": 2832217991615410906
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__8": 7492874530784563960
+      "Ba\u0301nh xe kim loa\u0323i vo\u031B\u0301i chu\u031B\u0303 _CAO__9": 7341986402197782075
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
