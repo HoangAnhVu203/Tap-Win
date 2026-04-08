@@ -1,0 +1,20 @@
+
+ani lixi.png
+size: 424,208
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lixi1
+  rotate: true
+  xy: 2, 2
+  size: 204, 252
+  orig: 206, 255
+  offset: 1, 1
+  index: -1
+lixi2
+  rotate: true
+  xy: 256, 2
+  size: 204, 166
+  orig: 206, 168
+  offset: 1, 1
+  index: -1

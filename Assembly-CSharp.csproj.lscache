@@ -64,6 +64,7 @@ Assets/_Game/Scripts/Manager/
 Assets/_Game/Scripts/UI/Panel/
  PanelClaimEnergy.cs
  PanelGameplay.cs
+ PanelPrize.cs
 Assets/_Game/Scripts/UI/
  Singleton.cs
  UICanvas.cs
@@ -348,6 +349,8 @@ Library/PackageCache/
 Temp/bin/Debug/
  PPv2URPConverters.dll
  PsdPlugin.dll
+ spine-unity-editor.dll
+ spine-unity.dll
  Unity.2D.Animation.Editor.dll
  Unity.2D.Animation.Runtime.dll
  Unity.2D.Aseprite.Common.dll

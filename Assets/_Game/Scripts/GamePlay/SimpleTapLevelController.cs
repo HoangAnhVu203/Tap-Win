@@ -177,7 +177,11 @@ public class SimpleTapLevelController : MonoBehaviour
 
             nodes[index].SetDisabled(true);
 
-            yield return StartCoroutine(CoScrollToIndex(index));
+            int focusIndex = GetFirstAvailableNodeIndex();
+            if (focusIndex == -1)
+                focusIndex = index;
+
+            yield return StartCoroutine(CoScrollToIndex(focusIndex));
             yield return new WaitForSeconds(delayBetweenDisable);
         }
     }
@@ -195,11 +199,17 @@ public class SimpleTapLevelController : MonoBehaviour
 
     private IEnumerator CoScrollToIndex(int index)
     {
-        if (scrollRect == null || nodes.Count <= 1)
+        if (scrollRect == null || nodes.Count == 0)
             yield break;
 
         float start = scrollRect.verticalNormalizedPosition;
         float target = GetNormalizedByIndex(index);
+
+        if (Mathf.Approximately(start, target))
+        {
+            scrollRect.verticalNormalizedPosition = target;
+            yield break;
+        }
 
         float time = 0f;
         while (time < scrollDuration)
@@ -215,10 +225,60 @@ public class SimpleTapLevelController : MonoBehaviour
 
     private float GetNormalizedByIndex(int index)
     {
-        if (nodes.Count <= 1) return 0f;
+        if (nodes.Count == 0)
+            return 0f;
 
-        // index 0 = ô dưới cùng
-        // index cuối = ô trên cùng
-        return (float)index / (nodes.Count - 1);
+        int clampedIndex = Mathf.Clamp(index, 0, nodes.Count - 1);
+
+        if (!TryGetScrollRects(out RectTransform contentRect, out RectTransform viewportRect))
+        {
+            if (nodes.Count <= 1)
+                return 0f;
+
+            return (float)clampedIndex / (nodes.Count - 1);
+        }
+
+        RectTransform nodeRect = nodes[clampedIndex] != null ? nodes[clampedIndex].Rect : null;
+        if (nodeRect == null)
+        {
+            if (nodes.Count <= 1)
+                return 0f;
+
+            return (float)clampedIndex / (nodes.Count - 1);
+        }
+
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(contentRect);
+
+        float scrollableHeight = contentRect.rect.height - viewportRect.rect.height;
+        if (scrollableHeight <= 0.001f)
+            return 0f;
+
+        Vector3[] nodeCorners = new Vector3[4];
+        nodeRect.GetWorldCorners(nodeCorners);
+
+        Vector3 nodeCenterWorld = (nodeCorners[0] + nodeCorners[2]) * 0.5f;
+        Vector3 nodeCenterLocal = contentRect.InverseTransformPoint(nodeCenterWorld);
+
+        float nodeCenterFromBottom = nodeCenterLocal.y + (contentRect.rect.height * contentRect.pivot.y);
+        float targetScrollFromBottom = nodeCenterFromBottom - (viewportRect.rect.height * 0.5f);
+
+        return Mathf.Clamp01(targetScrollFromBottom / scrollableHeight);
+    }
+
+    private bool TryGetScrollRects(out RectTransform contentRect, out RectTransform viewportRect)
+    {
+        contentRect = null;
+        viewportRect = null;
+
+        if (scrollRect == null)
+            return false;
+
+        contentRect = scrollRect.content;
+        viewportRect = scrollRect.viewport != null
+            ? scrollRect.viewport
+            : scrollRect.GetComponent<RectTransform>();
+
+        return contentRect != null && viewportRect != null;
     }
 }

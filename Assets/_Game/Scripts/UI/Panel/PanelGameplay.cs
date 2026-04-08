@@ -37,6 +37,11 @@ public class PanelGameplay : UICanvas
     [SerializeField] private Text txtEnergyCurrent;
     [SerializeField] private Text txtEnergyCost;
 
+    [Header("Coin Reward")]
+    [SerializeField] private int coinPerStep = 1;
+    [SerializeField] private int levelCompleteBonusCoin = 100;
+    [SerializeField] private Text txtCoinTotal;
+
     private bool isPlaying;
     private float currentPointerAngle;
 
@@ -54,7 +59,11 @@ public class PanelGameplay : UICanvas
         if (EnergySystem.Instance != null)
             EnergySystem.Instance.OnEnergyChanged += OnEnergyChanged;
 
+        CoinSystem.OnCoinChanged += OnCoinChanged;
+
+        EnsureCoinText();
         UpdateEnergyUI();
+        UpdateCoinUI();
     }
 
     private void OnDestroy()
@@ -64,11 +73,18 @@ public class PanelGameplay : UICanvas
 
         if (EnergySystem.Instance != null)
             EnergySystem.Instance.OnEnergyChanged -= OnEnergyChanged;
+
+        CoinSystem.OnCoinChanged -= OnCoinChanged;
     }
 
     private void OnEnergyChanged(int value)
     {
         UpdateEnergyUI();
+    }
+
+    private void OnCoinChanged(int value)
+    {
+        UpdateCoinUI();
     }
 
     public void OnClickTap()
@@ -115,9 +131,30 @@ public class PanelGameplay : UICanvas
         yield return StartCoroutine(CoRotatePointer(targetAngle));
 
         TapLevelView currentLevel = levelManager.CurrentLevel;
+        int rewardCoin = 0;
+        bool completedLevel = false;
+
         if (currentLevel != null)
         {
             yield return StartCoroutine(currentLevel.DisableStepsRoutine(sector.steps));
+
+            int movedSteps = currentLevel.LastDisabledCount;
+            completedLevel = currentLevel.LastActionCompletedLevel;
+
+            rewardCoin = movedSteps * Mathf.Max(0, coinPerStep);
+            if (completedLevel)
+                rewardCoin += Mathf.Max(0, levelCompleteBonusCoin);
+        }
+
+        if (rewardCoin > 0)
+        {
+            CoinSystem.AddCoins(rewardCoin);
+            yield return StartCoroutine(CoShowPrize(rewardCoin));
+        }
+
+        if (completedLevel && currentLevel != null)
+        {
+            currentLevel.CompleteLevel();
         }
 
         EndTap();
@@ -228,6 +265,51 @@ public class PanelGameplay : UICanvas
 
         if (txtEnergyCost != null)
             txtEnergyCost.text = cost.ToString();
+    }
+
+    private void UpdateCoinUI()
+    {
+        EnsureCoinText();
+
+        if (txtCoinTotal != null)
+            txtCoinTotal.text = $"Coin: {CoinSystem.CurrentCoin}";
+    }
+
+    private IEnumerator CoShowPrize(int rewardCoin)
+    {
+        PanelPrize panelPrize = UIManager.Instance.OpenUI<PanelPrize>();
+        panelPrize.ShowReward(rewardCoin);
+
+        yield return new WaitUntil(() => panelPrize == null || !panelPrize.IsShowing);
+    }
+
+    private void EnsureCoinText()
+    {
+        if (txtCoinTotal != null)
+            return;
+
+        GameObject coinTextObject = new GameObject("CoinTotalText");
+        coinTextObject.transform.SetParent(transform, false);
+
+        RectTransform rect = coinTextObject.AddComponent<RectTransform>();
+        rect.anchorMin = new Vector2(1f, 1f);
+        rect.anchorMax = new Vector2(1f, 1f);
+        rect.pivot = new Vector2(1f, 1f);
+        rect.anchoredPosition = new Vector2(-70f, -90f);
+        rect.sizeDelta = new Vector2(320f, 70f);
+
+        Text text = coinTextObject.AddComponent<Text>();
+        text.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        text.fontSize = 36;
+        text.alignment = TextAnchor.MiddleRight;
+        text.color = Color.white;
+        text.raycastTarget = false;
+
+        Outline outline = coinTextObject.AddComponent<Outline>();
+        outline.effectColor = new Color(0f, 0f, 0f, 0.65f);
+        outline.effectDistance = new Vector2(2f, -2f);
+
+        txtCoinTotal = text;
     }
 
     public void OpenClaimEnergyPanel() => UIManager.Instance.OpenUI<PanelClaimEnergy>();
