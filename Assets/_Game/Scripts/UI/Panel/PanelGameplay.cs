@@ -272,7 +272,7 @@ public class PanelGameplay : UICanvas
         EnsureCoinText();
 
         if (txtCoinTotal != null)
-            txtCoinTotal.text = $"Coin: {CoinSystem.CurrentCoin}";
+            txtCoinTotal.text = $"{CoinSystem.CurrentCoin}";
     }
 
     private IEnumerator CoShowPrize(int rewardCoin)

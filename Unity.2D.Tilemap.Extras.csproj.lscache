@@ -11,6 +11,7 @@ version=1
 
 [project]
 language=C#
+primary
 lastDtbSucceeded
 
 [properties]
@@ -358,9 +359,7 @@ Library/PackageCache/
   Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll
 Temp/bin/Debug/
  Unity.2D.Tilemap.Editor.dll
- UnityEditor.TestRunner.dll
  UnityEditor.UI.dll
- UnityEngine.TestRunner.dll
  UnityEngine.UI.dll
 
 [analyzerReferences]

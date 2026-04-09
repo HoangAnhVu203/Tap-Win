@@ -57,4 +57,6 @@ public class PanelPrize : UICanvas, IPointerClickHandler
         if (texts.Length > 0)
             txtReward = texts[0];
     }
+
+    
 }
